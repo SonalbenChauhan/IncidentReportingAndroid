@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="HR Incident Reporting"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/labelIncidentId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="80dp"
+        android:text="Incident Id"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/textIncidentId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="70dp"
+        android:ems="6"
+        android:inputType="textPersonName"
+        android:textSize="14dp" />
+    <TextView
+        android:id="@+id/labelEmpName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="180dp"
+        android:text="Employee Name"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/textEmpName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="170dp"
+        android:ems="13"
+        android:inputType="textPersonName"
+        android:textSize="14dp"
+        android:layout_alignRight="@id/textDate"/>
+
+    <TextView
+        android:id="@+id/labelEmpNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="130dp"
+        android:text="Employee Number"
+        android:textSize="16dp"
+        />
+
+    <EditText
+        android:id="@+id/textEmpNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="120dp"
+        android:ems="8"
+        android:inputType="textPersonName"
+        android:textSize="14dp"
+        />
+    <TextView
+        android:id="@+id/labelDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="80dp"
+        android:text="Date"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/textDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="256dp"
+        android:layout_marginTop="70dp"
+        android:ems="8"
+        android:inputType="textPersonName"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/labelGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="230dp"
+        android:text="Gender"
+        android:textSize="16dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="225dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="40dp"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/radioFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/labelShift"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="280dp"
+        android:text="Shift"
+        android:textSize="16dp" />
+
+    <Spinner
+        android:id="@+id/spinnerShift"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="280dp"
+        />
+    <TextView
+        android:id="@+id/labelDepartment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="330dp"
+        android:text="Department"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/textDepartment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="320dp"
+        android:ems="15"
+        android:inputType="textPersonName"
+        android:textSize="14dp"
+        android:layout_alignRight="@id/textDate"/>
+    <TextView
+        android:id="@+id/labelPosition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="380dp"
+        android:text="Position"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/textPosition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="370dp"
+        android:ems="16"
+        android:inputType="textPersonName"
+        android:textSize="14dp"
+        android:layout_alignRight="@id/textDate"/>
+
+    <TextView
+        android:id="@+id/labelIncidentType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="430dp"
+        android:text="Incident Type"
+        android:textSize="16dp" />
+
+    <Spinner
+        android:id="@+id/spinnerIncidentType"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="430dp"
+        />
+    <TextView
+        android:id="@+id/labelInjuredPart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="480dp"
+        android:text="Injured Body Part"
+        android:textSize="16dp" />
+
+    <Spinner
+        android:id="@+id/spinnerInjuredPart"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="480dp"
+        />
+
+    <Button
+        android:id="@+id/buttonReportIncident"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Report Incident"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="540dp"/>
+
+    <Button
+        android:id="@+id/buttonCapture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Capture Photo"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="540dp"/>
+    <Button
+        android:id="@+id/buttonOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="120dp"/>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="600dp" />
+</RelativeLayout>
